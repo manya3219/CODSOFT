@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url("https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=");
+
+}
+.calculator{
+    border:1px solid green;
+    padding:20px;
+    border-radius:16px;
+    background:transparent;
+    box-shadow:0px 3px 15px white;
+}
+
+input{
+    width:320px;
+    border:none;
+    padding:24px;
+    margin:10px;
+    background:LightGray;
+    box-shadow:0px 3px 15px LightGray;
+    font-size: 40px;
+    text-align:right;
+    cursor:pointer;
+    color:indigo;
+}
+input::placeholder{
+    color:indigo;
+}
+button{
+    border:none;
+    width:60px;
+    height:60px;
+    margin:10px;
+    border-radius:30%;
+    background:voilet;
+    color:black;
+    font-size:20px;
+    box-shadow:-8px -8px 15px rgba(255,255,255,0.1);
+    cursor:pointer;
+
+}
+.equalBtn{
+    background-color:orange;
+    
+}
+.opt{
+    color:red;
+}

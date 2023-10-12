@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoping with era</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section id="header">
+         <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Casino_Shopping_logo.png" widhth=50 height=70 class="logo" alt=" " ></a>
+         <div class ="search">
+            <input type="text" class="bar"  title="search here"   placeholder="search for product">
+            
+         </div>
+        <div>
+           
+            <ul id="navbar">
+                <li><a class="active" href="shoping.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+               
+                <li id="lg-bag"><a href="cart.html"><i class="fa-regular fa-bags-shopping"></i></a></li> 
+                <a href="#" id="close"><i class= "far da -times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+         <a href="cart.html"><i class="fad fa-shoping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id=hero >
+        <h4> TRADE-IN OFEER</h4>
+        <h2>Supper Value Deals</h2>
+        <h1>On All Products</h1>
+        <p>Save More With Coupons And Upto 60% Off!</p>
+        <button><i>shop now</i></button>
+    </section>
+    <section id="feature" class="section-p1">
+         <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgjgBgdeH27PMNWyABLYhE4jkyHQiL42Ocg&usqp=CAU" alt="" width="110px" height="70">
+            <h6>FREE SHIPPING</h6>
+         </div>
+         <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyBr0-V6WwBj-AZ2k03qTKx7eHyarnTH5oA&usqp=CAU" alt="" width="110px" >
+            <h6>ONLINE ORDER</h6>
+         </div>
+         <div class="fe-box">
+            <img src="https://easydrawingguides.com/wp-content/uploads/2018/11/Stack-of-Money-10.png" alt="" width="150px"  height="73">
+            <h6>MONEY</h6>
+         </div>
+         <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRElY_GBzHA7O9Bi4ZgMrFq5IJ6wgxn1XLC60osmzw1iHGooZ49Hoq8ecnNjHSWqYooz2U&usqp=CAU" width="110px" height="73px">
+            <h6>PROMOTIONS</h6>
+         </div>
+         <div class="fe-box">
+            <img src="data:image/png;base64,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" alt="" width="110px" height="73px">
+            <h6>HAPPY SELL</h6>
+         </div>
+         <div class="fe-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyk8TwXw0DYR64tC1WTqkREgnCs4Y19gi6qQ&usqp=CAU" alt="" width="150px" height="73px">
+            <h6>F24/7 support</h6>
+         </div>
+
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>FEATURE PRODUCTS</h2>
+      <P>summer collection new mordern design</P>
+      <div class="pro-container">
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/14141216/2021/6/24/51d25ccc-4ec4-48c9-82e6-fe6894e3bd6d1624517069429-plusS-Women-Tops-1611624517068986-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>New Stylish Printed Top</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$50</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16233570/2021/11/24/9e57c6bb-f1c8-435e-96ca-bd0b51b033571637774260544PANASHWomenGold1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Women Hair Accesories</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$30</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16846726/2022/2/3/d81c0838-9a5f-45a4-a93f-4163e6f9548c1643867893380SatinEmbroideryWorkSaree1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>New Stylish Printed Saree</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$100</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/17184790/2022/9/23/d15fa8a3-8b7c-4739-a218-eac348ddb3df1663931007883-Flat-n-Heels-Black-Sandals-4881663931007577-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5> High Heel Sandals</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$80</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19312894/2022/7/30/c4b9b60c-e83b-47d1-8033-291be7434fda1659171280101AfroJackWomenPinkColourblockedSneakers1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>New Stylish Shoes</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$150</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/fl_progressive/h_960,q_80,w_720/v1/assets/images/2418013/2021/1/27/089225e3-14cf-4322-b300-6e805b1cc06b1611738678086-Roadster-Women-Navy-Blue--Blue-Regular-Fit-Checked-Casual-Sh-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Roadster Shirts</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$130</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20412312/2022/10/15/7a9088b6-4c5c-4f38-b327-944a983c9f911665815553241SkinnyHighJeans3.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Black Berry Jeans</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$120</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/15598180/2022/2/4/0cae0b47-0ae6-4bec-aa2f-a00a5624c3a11643957685405-DILLINGER-Women-Navy-Blue-Typography-Printed-Pure-Cotton-Loo-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Roadster T-Shirt</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$120</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+
+
+      </div>
+    </section>
+    <section id="banner" class="section-m1">
+      <h4> Repair Services</h4>
+      <h2>Up To <span>70% Off</span>- All Products</h2>
+      <button class="normal">Explore more</button>
+
+    </section>
+    <section id="product1" class="section-p1">
+      <h2>New Arival</h2>
+      <P>summer collection new mordern design for mens</P>
+      <div class="pro-container">
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19818628/2022/9/6/ec27eee6-d613-4423-8e0f-007aea1603c31662468109188Shirts1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>New Stylish black shirt</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$50</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16934964/2022/1/25/3a498e2e-7250-4e5e-aa33-1876b6d813741643102245729SmartWatches1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Smarts Watche</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$30</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20517370/2022/11/24/72544d01-284f-49de-a541-d84da9dce4e61669289492614-Louis-Philippe-Jeans-Men-Shirts-8351669289492056-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Denim shirt</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$100</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23418796/2023/6/12/c758a6cb-2c97-4dfc-aa77-e465ab54fe801686567574562-Pilgrim-Make-An-Impression-Mens-Perfume-Collection---100ml-E-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5> Perfume</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$80</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>New Stylish Shoes</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$150</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/20036548/2022/9/18/b793e41e-71a2-4e79-aead-adb265b7e5711663477350650EmbroideredKurtaPyjama1.jpg"alt="">
+            <div class="des">
+               <sapn> Traditional wear</sapn>
+               <h5>kurta</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$130</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22094514/2023/2/23/5a85784a-bfe3-4aa9-a23f-ff092760d8ec1677144652766ZOROMenBlackLeatherBelt1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Black Berry Belt</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$120</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+         <div class="pro">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10341699/2022/8/25/c23fd879-a9b3-4515-a181-558523a71b9b1661423122029-LOCOMOTIVE-Men-Black--Grey-Slim-Fit-Checked-Casual-Shirt-342-1.jpg"alt="">
+            <div class="des">
+               <sapn> adidas</sapn>
+               <h5>Roadster Shirt</h5>
+               <div class ="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
+               <h4>$120</h4>
+
+            </div>
+            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+         </div>
+
+
+      </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+         <h4>Crazy Deals</h4>
+         <h2>Buy-1 Get-1 Free</h2>
+         <span> the best classic dress is on sale at carat</span>
+         <button class="white">learn more</button>
+      </div>
+      <div class="banner-box banner-box2">
+         <h4>Spring/summer</h4>
+         <h2>Upcomming sales</h2>
+         <span> the best classic dress is on sale at carat</span>
+         <button class="white">collection</button>
+      </div>
+    </section>
+   
+    <section id="banner3">
+      <div class="banner-box">
+         
+         <h2>Seasonal Sales</h2>
+         <h3>Winter collection -50% OFF</h3>
+      </div>
+      <div class="banner-box banner-box2">
+         
+         <h2>NEW FOOTWEAR COLLECTION</h2>
+         <h3>Spring/summer 2023</h3>
+      </div>
+      <div class="banner-box banner-box3">
+         
+         <h2>T-SHIRTS</h2>
+         <h3>New Trendy Prints</h3>
+      </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+         <h4>Sign Up For Newsletters</h4>
+         <p> Get E-mail updates about our latest shop and<span>Amazing offers</span></p>
+      </div>
+      <div class="form">
+         <input type="text" placeholder="your mail address">
+         <button class="normal">Sign Up</button>
+      </div>
+    </section>
+<!--footer-->
+    
+
+    <footer class="sec-1">
+      <div class="col">
+        <img src="https://commons.wikimedia.org/wiki/File:Casino_Shopping_logo.png"  class="logo" width="140px" style=" margin-bottom: 5px;" alt="">
+        <h4>CONTACT</h4>
+        <p><strong>ADDRESS : </strong> #219 Rohini Market,New Delhi</p>
+        <p><strong>CONTACT NO. : </strong> +91-94323xxxxx</p>
+        <p><strong>AVAILABLE :</strong> 24/7 Services</p>
+        <div class="follow">
+          <h4>FOLLOW US</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f c"></i>
+            <i class="fab fa-twitter d"></i>
+            <i class="fab fa-instagram e"></i>
+            <i class="fab fa-youtube f"></i>
+          </div> 
+        </div>
+      </div>
+      <div class="col">
+        <h4>ABOUT</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policies</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>MY ACCOUNT</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>INSTALL APP</h4>
+        <p><strong>From App Store Or Google Play</strong></p>
+        <div class="row">
+          <img src="imgg/app store.jpg" alt="">
+          <img src="imgg/googleplayy.jpg" alt="">
+        </div>
+        <p><strong>SECURED PAYMENT GATEWAYS</strong></p>
+        <img src="https://logodix.com/logo/946288.jpg" alt="">
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>&#169; casino shoping center 
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

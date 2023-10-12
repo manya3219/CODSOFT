@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.containers {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: url("https://images.pexels.com/photos/399161/pexels-photo-399161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background:#8f00ff21;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 30px;
+  border: 2px solid rgb(237, 226, 226);
+  box-shadow: 0px 5px 8px white;
+}
+
+.todo-app h2 {
+  color: #00fffa;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 50px;
+  text-shadow: 0px 3px 8px #68a4e4;
+}
+
+.todo-app h2 img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#ea1c426b;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+li.active span {
+  white-space: normal;
+  height: 100px;
+}
+
+.delete-button {
+  background-color: #ff4545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 9px;
+  cursor: pointer;
+}
+
+/* Hide the Edit and Delete options by default */
+.task-actions {
+  display: none;
+}
+
+/* Show the Edit and Delete options when the task is active (clicked) */
+li.active .task-actions {
+  display: flex;
+}
+
+/* Limit the task text length to fit within the task list box */
+li span {
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

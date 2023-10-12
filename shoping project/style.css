@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css?family=spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'spartan',sans-serif;
+}
+ h1{
+    font-size:50px;
+    line-height:64px;
+    color:black;
+ }
+ h2{
+    font-size:50px;
+    line-height:64px;
+    color:black;
+ }
+ h4{
+    font-size:20px;
+    color:black;
+
+ }
+ h6{
+    font-weight:700;
+    font-size:12px;
+ }
+ p{
+    font-size:16px;
+    color:grey;
+    margin:15 px 0 20 px 0;
+ }
+ .section-p1{
+    padding:40px 80px;
+ }
+ .section-m1{
+    margin:40px 0;
+ }
+ button.normal{
+   font-size:14 px;
+   font-weight:600px;
+   padding: 15px 30px;
+   color:#1a1a1a;
+   background-color: #fff;
+   border-radius: 4px;
+   cursor:pointer;
+   border:none;
+   outline:none;
+   transition:0.2s;
+ }
+ button.white{
+   font-size:13 px;
+   font-weight:600px;
+   padding: 11px 18px;
+   color:#ffffff;
+   background-color:transparent;
+  
+   cursor:pointer;
+   border:1px solid white;
+   outline:none;
+   transition:0.2s;
+ }
+ body{
+    width:100%;
+ }
+
+ /*header start*/
+ #header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 80px;
+    background:rgb(249, 195, 243);
+    box-shadow:0 5px 15px rgba(0,0, 0, 0.06);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+
+
+
+
+ }
+ #navbar{
+    display: flex;
+    align-items: center;
+    justify-content:none;
+ }
+ #navbar li{
+    list-style:none;
+    padding:0 20px;
+    position:relative;
+
+ }
+ #navbar li a{
+    text-decoration:none;
+    font-size:14 px;
+    font-weight:600;
+    color:rgb(49, 30, 30);
+    transition:0.3 ease;
+
+ }
+ #navbar li a:hover,
+ #navbar li a.active{
+    color:rgb(24, 129, 94);
+ }
+ #navbar li a.active::after,
+ #navbar li a:hover::after{
+         content:"";
+         width:30%;
+         height:2px;
+         background:rgb(19, 126, 96);
+
+         position: absolute;
+
+         bottom:-4px;
+         
+         left:20px; 
+ }
+ #mobile{
+   display:none;
+   align-items:center;
+ }
+ .bar{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+    
+    border-radius: 15px 50px 30px;
+  
+    
+ }
+  .search input{
+      width: 265px;
+      height: 100%;
+      padding: 0 10px;
+      margin: 30px;
+   }
+
+   #close{
+      display:none;
+   }
+
+ #hero{
+   background-image:url("https://img.freepik.com/free-photo/full-length-portrait-happy-excited-girl-bright-colorful-clothes-holding-shopping-bags-while-standing-showing-peace-gesture-isolated_231208-5946.jpg?w=2000");
+   height:90vh;
+   width:100%;
+   background-size: cover;
+   background-position: top 0% right 0;
+   padding:0 80px;
+   display:flex;
+   flex-direction:column ;
+   align-items:flex-start;
+   justify-content:center;
+   box-shadow:#1a1a1a;
+   
+
+ }
+ 
+ #hero h4{
+   padding-bottom:15px;
+ }
+ #hero h1{
+   animation: colorful 6s infinite;
+   text-shadow: 0 0 10px rgb(127, 9, 125);
+   animation-duration: 4s;
+   color:#8a0c76;
+ }
+ @keyframes colorful{
+   from {color: #8a0c76;}
+   to {color:#7d0d8a }
+ }
+ #hero button{
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsRFJtG5yyERfR0R8zkgZC8JKlJSO3c8ZJDw&usqp=CAU");
+   background-color: transparent;
+   color:#8a0c76;
+   border:0;
+   padding : 14px 80px 14px 65px;
+   border-radius: 25px;
+   border-color:black;
+   background-repeat:no-repeat;
+   cursor:pointer;
+   font-weight:700;
+   font-size:15px;
+   text-shadow: 0 0 10px rgb(127, 9, 125);
+ }
+ #feature{
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+   flex-wrap:wrap;
+
+ }
+ #feature .fe-box{
+      width:180px;
+      text-align:center;
+      padding:25px 15px;
+      box-shadow:20px 20px 34px rgba(105, 5, 60, 0.06);
+      border:1px solid #4c0354;
+      border-radius:4px;
+      margin:15px 0;
+ }
+ #feature .fe-box:hover{
+   box-shadow: 10px 10px 54px rgba(55, 50, 144, 0.1);
+ }
+ #feature .fe-box img {
+   
+   margin-bottom:10px;
+ }
+ #feature .fe-box h6{
+   display:inline-block;
+   padding:9px 8px 6px 8px;
+   line-height:1;
+   border-radius:4px;
+   color: #8a0c76;
+   background-color:cornsilk;
+
+ }
+ #feature .fe-box:nth-child(2)h6{
+       background-color:rgb(150, 231, 231);
+ }
+ #feature .fe-box:nth-child(3)h6{
+   background-color: rgb(216, 133, 213);
+}
+
+#feature .fe-box:nth-child(4)h6{
+   background-color: rgb(150, 229, 255);
+}
+
+#feature .fe-box :nth-child(5)h6{
+   background-color: rgb(219, 50, 110);
+}
+
+#feature .fe-box :nth-child(6)h6{
+   background-color: rgb(164, 243, 193);
+}
+
+#product1{
+   text-align:center;
+}
+#product1 .pro-container{
+   display:flex;
+   justify-content:space-between;
+   padding-top:20px;
+   flex-wrap:wrap;
+}
+#product1 .pro{
+       width:23%;
+       min-width:250px;
+       padding:10px 12px;
+       border:1px solid #d3ebd7;
+       border-radius:25px;
+       cursor:pointer;
+       box-shadow: 20px 20px 30px rgba(184, 157, 157, 0.06);
+       margin: 15px 0px;
+       transition:0.2s ease;
+       position:relative;
+}
+#product1 .pro:hover{
+   box-shadow:50px 50px 30px rgba(65, 63, 63, 0.06);
+}
+#product1 .pro img{
+    width:100%;
+    border-radius:20px;
+}
+
+#product1 .pro .des{
+   text-align:start;
+   padding:10px 0;
+}
+
+#product1 .pro .des span{
+   color:#606063;
+   font-size:12px;
+}
+#product1 .pro .des h5{
+   padding-top: 7px;
+   color:#1a1a1a;
+   font-size :14px;
+}
+#product1 .pro .des i{
+   font-size:12px;
+   color:#fdd63b;
+}
+#product1 .pro .des h4{
+   padding-top:7px;
+   font-size:15px;
+   font-weight:700;
+   color:rgb(29, 121, 90);
+}
+#product1 .pro .cart{
+   width:40px;
+   height:40px;
+   line-height:40px;
+  
+   position:absolute;
+   bottom:20px;
+   right:10px;
+  
+}
+#banner{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   text-align:center;
+   background-image: url("https://t3.ftcdn.net/jpg/05/74/76/24/360_F_574762429_vY2xYIgAT3YynqEL2AoxX5J1e2YotYEt.jpg");
+   width: 100%;
+   height:40vh;
+   background-size: cover;
+   background-position: center;
+}
+#banner h4{
+   color:rgb(240, 248, 255);
+   font-size:16px;
+}
+#banner h2{
+   color:rgb(240, 248, 255);
+   font-size:30px;
+   padding:10px 0px;
+}
+#banner h2 span{
+   color:#f83333;
+  
+}
+#banner button:hover{
+    background-color: #bf0ea1;
+    color:#fff;
+    
+}
+#sm-banner{
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:wrap;
+}
+#sm-banner .banner-box{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:flex-start;
+
+   background-image: url("https://as2.ftcdn.net/jpg/03/09/86/97/360_F_309869755_IquCHHxF7YABo2odctUGEjMrgVDSM8qV.jpg");
+   min-width: 640px;
+   height:50vh;
+   background-size: cover;
+   background-position: center;
+   padding:30px;
+}
+#sm-banner .banner-box2{
+   background-image: url("https://static.vecteezy.com/system/resources/previews/002/006/605/original/paper-art-shopping-online-on-smartphone-and-new-buy-sale-promotion-pink-backgroud-for-banner-market-ecommerce-free-vector.jpg")
+}
+#sm-banner h4{
+   color:#fff;
+   font-size:20px;
+   font-weight:300;
+}
+#sm-banner h2{
+   color:#fff;
+   font-size:28px;
+   font-weight:800;
+}
+#sm-banner span{
+   color:#fff;
+   font-size:14px;
+   font-weight:500;
+   padding-bottom:15px;
+}
+#sm-banner .banner-box:hover button{
+   background:#bf0ea1;
+   border:1px solid #bf0ea1;
+}
+#banner3{
+   display:flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   padding:0 80px;
+   position:relative;
+   animation:rightmovement infinite;
+   animation-iteration-count:infinite;
+   animation-duration:30s;
+   animation-timing-function:ease;
+}
+@keyframes rightmovement {
+   from{
+      top:0;
+      left:0;
+   }
+   to{
+      top:0;
+      left :1200px;
+   }
+   
+}
+
+#banner3 .banner-box{
+   display:flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items:flex-start;
+
+   background-image: url("https://img.freepik.com/free-photo/funny-caucasian-lady-making-faces-during-photoshoot-purple-wall-indoor-portrait-stunning-woman-with-brown-wavy-hair-wears-stylish-pink-clothes_197531-5101.jpg?size=626&ext=jpg&ga=GA1.1.239539479.1688063957&semt=ais");
+   min-width: 30%;
+   height:30vh;
+   background-size: cover;
+   background-position: center;
+   padding:20px;
+   margin-bottom:20px;
+   
+}
+
+#banner3 .banner-box2{
+   background-image: url("https://img.freepik.com/free-photo/studio-close-up-portrait-young-fresh-blonde-woman-brown-straw-poncho-wool-black-trendy-hat-round-glasses-looking-camera-green-leather-had-bag_273443-1121.jpg?w=1060&t=st=1688064196~exp=1688064796~hmac=a567f10d04c86544783c270d218caa20b6ef1cc27389ecf277a4d27330102ce0");
+}
+#banner3 .banner-box3{
+   background-image: url("https://img.freepik.com/free-photo/young-woman-warm-sweater_1303-17666.jpg?w=1060&t=st=1688064414~exp=1688065014~hmac=1f349e61d0201413b08b65ebd26cfa2c347b3a598f76dc28b0966f7a783c1093");
+}
+#banner3 h2{
+   color: #fff;
+   font-weight: 900;
+   font-size: 22px;
+   
+}
+#banner3 h3{
+   color: #e70505;
+   font-weight: 800;
+   font-size: 15px;
+}
+#newsletter{
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:wrap;
+   align-items:center;
+   background-image: url("https://cdn.wallpapersafari.com/56/43/zM7cS1.png");
+   background-repeat: no-repeat;
+   background-position:20% 30%;
+   background-size: cover;;
+   background-color: #1a1a1a;
+}
+#newsletter h4{
+   font-size:22px;
+   font-weight:700;
+   color:#d3ebd7;
+
+}
+#newsletter p{
+   font-size:14px;
+   font-weight:600;
+   color:#d3ebd7;
+
+}
+#newsletter .form{
+    display:flex;
+    width:30%;
+}
+#newsletter p span{
+
+   color:#e8b527;
+
+}
+#newsletter input{
+   height:3.125rem;
+   padding:0 1.25em;
+   font-size:14px;
+   width:100%;
+   border:1px solid transparent;
+   border-radius: 4px;
+   outline:none;
+   border-top-right-radius:0 ;
+   border-bottom-right-radius:0 ;
+
+}
+#newsletter button{
+   background-color: #8a0c76;
+   color:#fff;
+   white-space:nowrap;
+   border-top-left-radius:0 ;
+   border-bottom-left-radius:0 ;
+}
+
+/*shop page*/
+
+#page-header{
+   background-image: url("https://wallpapercave.com/wp/34CZFYH.jpg");
+   width:100%;
+   height:40vh;
+   background-size:cover;
+   display:flex;
+   justify-content:center;
+   text-align:center;
+   flex-direction: column;
+   padding:14px;
+}
+#page-header h2,
+#page-header p{
+   color:#fff;
+}
+#pagination a{
+   text-decoration:none;
+   background-color: #8a0c76;
+   padding:15px 20px;
+   border-radius:4px;
+   color:#fff;
+   font-weight:600;
+   justify-content:center;
+   text-align:center;
+}
+
+
+/*START MEDIA QUERY*/
+@media(max-width:799px) {
+   #navbar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      position:fixed;
+      top:0;
+      right:-300px;
+      height:100vh;
+      width:300px;
+      background-color: #e8f6ea;
+      box-shadow: 0 40px 60px rgba(0,0, 0, 0.06);
+      padding:80px 0 0 10px;
+      transition: 0.3s;
+
+   }
+   #navbar.active{
+      right:0px;
+   }
+   #navbar{
+      margin-bottom:25px;
+   }
+   #mobile{
+      display:flex;
+      align-items:center;
+    }
+    #mobile i{
+       color:black;
+       font-size:24px;
+       padding-left:20px;
+    }
+    #close{
+      display:initial;
+      position:absolute;
+      top:30px;
+      left:30px;
+      color:black;
+      font-size:24px;
+    }
+    #lg-bag{
+      display:none;
+   }
+   #hero{
+      
+      height:70vh;
+      
+      padding:0 80px;
+      background-position: top 30% right 30%;
+     
+   
+    }
+    #feature{
+      justify-content:center;
+    }
+    #feature .fe-box{
+      margin:15px 15px;
+    }
+    #product1 .pro-container{
+        justify-content:center;
+    }
+    #product1 .pro{ 
+      margin: 15px ;  
+    }
+    #banner{
+     height:20vh;
+    }
+    #sm-banner .banner-box{
+      min-width: 100%;
+      height:30vh;
+      padding:30px;
+   }
+   #banner3{
+      padding:0 40px;
+   }
+   #banner3 .banner-box{
+      
+      width:28px;
+   }
+   #newsletter .form{
+      width:70%;
+   }
+}
+@media(max-width:477px){
+   .section-p1{
+      padding:20px;
+   }
+   #header{
+      padding:10px 30px;
+   }
+   h2{
+      font-size :32px;
+   }
+   h1{
+      font-size :38px;
+   }
+   #hero{
+      padding:0 20px;
+      background-position:55%;
+
+   }
+   #feature{
+      justify-content:space-between;
+   }
+   #feature .fe-box{
+      width:155px;
+      margin:0 0 15px 0;
+   }
+   #product1 .pro{
+      
+      margin: 100%;
+      
+    }
+    #banner{
+      height:40vh;
+     }
+     #sm-banner .banner-box{
+      height:40vh;  
+   }
+   #sm-banner .banner-box2{
+      height:20px; 
+   }
+   #banner3{
+      padding:0 20px;
+   }
+   #banner3 .banner-box{ 
+      width:100%;
+   }
+   #newsletter{
+      padding:40px 20px;
+   }
+   #newsletter .form{
+      width:100%;
+   }
+   
+
+   
+}
+/* FOOTER-------*/
+footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+footer .col{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 40px;
+
+}
+footer h4{
+   font-size: 18px;
+   padding-bottom: 8px;
+   font-weight: 800;
+   color: rgb(76, 75, 75);
+}
+footer p{
+   font-size: 14px;
+   margin: 0 0 8px 0;
+   color: grey;
+}
+footer strong{
+   color: rgb(84, 82, 82);
+}
+footer a{
+   font-size: 16.5px;
+   text-decoration: none;
+   color: grey;
+   margin-bottom: 9px;
+}
+footer .follow{
+   margin-top: 7px ;
+}
+footer .follow i{
+   color: gray;
+   padding-right: 4px;
+   cursor: pointer;
+}
+footer .install .row img{
+   border: 2px solid black;
+   border-radius: 6px;
+}
+footer .install img{
+   margin: 6px 0 10px 0;
+   width: 200px;
+}
+footer .icon .c:hover{
+   color:rgb(48, 48, 152);
+}
+footer .icon .d:hover{
+   color:#0ef;
+}
+footer .icon .e:hover{
+   color:rgb(221, 30, 116); 
+}
+footer .icon .f:hover{
+   color: rgb(255, 0, 0);
+}
+footer a:hover{
+   color: rgb(91, 91, 91);
+}
+
+.copyright{
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   font-size: 17px;
+   color: grey;
+  
+}

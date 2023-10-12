@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-image: url("https://static8.depositphotos.com/1052036/834/v/450/depositphotos_8348318-stock-illustration-indian-flag.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+  
+    
+    background-color:#e5e5fd;
+    border:10px solid #1d1e4c;
+    min-height:100vh;
+}
+.content{
+    max-width:900px;
+    margin:0 auto;
+}
+.top_section{
+    margin-top:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+.top_section h1{
+    font-size:60px;
+    font-weight:bold;
+    color:#1d1e4c; 
+ 
+    text-transformation: uppercase;
+}
+.top_section h4{
+    text-align:end;
+    font-size:20px;
+}
+.image_container{
+    border-radius:50%;
+    overflow:hidden;
+}
+.image_container,img{
+    width:300px;
+    height:320px;
+}
+.about_section {
+    margin-top: 50px;
+  }
+  .about_section h2 {
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:indigo;
+  }
+  .about_section p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+  }
+  .biography_section {
+    margin: 50px 0;
+  }
+  .biography_section h2 {
+    margin-bottom: 20px;
+    color:indigo;
+  }
+  .biography_section ul {
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+  }
+  .biography_section li {
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    margin: 50px 0;
+  }
+  footer p {
+    text-align: end;
+  }
